@@ -25,6 +25,26 @@ it('Expect add() ', () => {
     expect(add(0, 1)).toBe(1)
 })
 
+function getStringLength(str) {
+    return str.length
+}
+
+it('Expect getStringLength() ', () => {
+    expect(getStringLength('')).toBe(0)
+    expect(getStringLength('a')).toBe(1)
+    expect(getStringLength('abc')).toBe(3)
+})
+
+function isStringEmpty(str) {
+    return !str.length
+}
+
+it('Expect isStringEmpty() to return true if empty else false', () => {
+    expect(isStringEmpty('')).toBe(true)
+    expect(isStringEmpty('a')).toBe(false)
+    expect(isStringEmpty('0')).toBe(false)
+})
+
 
 function incrementNum(num) {
     return num + 1
@@ -52,4 +72,31 @@ function grabFirst(str) {
 it('Expect grabFirst() to grab the first character in a str or return false', () => {
     expect(grabFirst('a')).toBe('a')
     expect(grabFirst('')).toBe(false)
+})
+
+function grabStringAtIndex(str, index) {
+    return str.charAt(index)
+}
+
+it('Expect grabStringAtIndex to grab a string by an index', () => {
+    expect(grabStringAtIndex('a', 0)).toBe('a')
+    expect(grabStringAtIndex('abc', 2)).toBe('c')
+})
+
+function grabArrayAtIndex(arr, index) {
+    return arr[index]
+}
+
+it('Expect grabArrayAtIndex to grab an array at index', () => {
+    expect(grabArrayAtIndex([1], 0)).toBe(1)
+    expect(grabArrayAtIndex([1, {foo: 1}], 1)).toBe({foo: 1})
+})
+
+function grabLastStringIndex(str) {
+    return str.charAt(str.length - 1)
+}
+
+it('Expect grabLastStringIndex to grab last index', () => {
+    expect(grabLastStringIndex('a')).toBe('a')
+    expect(grabLastStringIndex('abc')).toBe('c')
 })
