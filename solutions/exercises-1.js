@@ -369,3 +369,15 @@ it('Expect call that function to call the function passed', () => {
     }
     expect(callThatFunction(add, 1, 2)).toBe(3)
 })
+
+function calculator() {
+    return {
+        add: function () {},
+        substract: function () {}
+    }
+}
+
+it('Make a calculator with add and substract methods that compute an answer', () => {
+    expect(calculator().add(1,2)).toBe(3)
+    expect(calculator().substract(1,1)).toBe(0)
+})
