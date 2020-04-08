@@ -340,3 +340,30 @@ it('Expect makeListOfNumbersWithOrder to make a the lists below', () => {
     expect(makeListOfNumbersWithOrder(8, 'descending')).toBe([8,7,6,5,4,3,2,1])
     expect(makeListOfNumbersWithOrder(8, 'ascending')).toBe([1,2,3,4,5,6,7,8])
 })
+
+function numsToObjList(arr) {
+
+}
+
+it('Expect numsToObj to take a list of numbers and make it a list of objects like below', () => {
+    expect(numsToObjList([1,2,3])).toBe([{value: 1}, {value: 2}, {value: 3}])
+})
+
+function objListToNums(arr) {
+
+}
+
+it('Expect objListToNums to take a list of numbers and make it a list of objects like below', () => {
+    expect(objListToNums([{value: 1}, {value: 2}, {value: 3}])).toBe([1,2,3])
+})
+
+function callThatFunction(cb, a, b) {
+    
+}
+
+it('Expect call that function to call the function passed', () => {
+    function add(a, b) {
+        return a + b
+    }
+    expect(callThatFunction(add, 1, 2)).toBe(3)
+})

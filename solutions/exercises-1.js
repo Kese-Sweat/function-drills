@@ -26,7 +26,7 @@ it('Expect add to add two numbers', () => {
 })
 
 function lessThanOne(num) {
-    return num < 1
+
 }
 
 it('Expect lessThanOne to return true', () => {
@@ -36,7 +36,7 @@ it('Expect lessThanOne to return true', () => {
 })
 
 function lessThanLimit(num, limit) {
-    return num < limit
+
 }
 
 it('Expect lessThanLimit to return true if less than limit', () => {
@@ -46,7 +46,7 @@ it('Expect lessThanLimit to return true if less than limit', () => {
 })
 
 function equalTo(prop, value) {
-    return prop === value
+
 }
 
 it('Expect equalTo', () => {
@@ -56,7 +56,7 @@ it('Expect equalTo', () => {
 })
 
 function getNumCharacters(str) {
-    return str.length
+
 }
 
 it('Expect getNumCharacters() to return how many characters a string is', () => {
@@ -66,7 +66,7 @@ it('Expect getNumCharacters() to return how many characters a string is', () => 
 })
 
 function isStringEmpty(str) {
-    return !str.length
+
 }
 
 it('Expect isStringEmpty() to return true if empty else false', () => {
@@ -76,7 +76,7 @@ it('Expect isStringEmpty() to return true if empty else false', () => {
 })
 
 function greet(str) {
-    return `Hello ${str}`
+
 }
 
 it('Expect greet() to return Hello {name} where name is a string', () => {
@@ -85,7 +85,7 @@ it('Expect greet() to return Hello {name} where name is a string', () => {
 })
 
 function checkIfStrHasA(str) {
-    return str.includes('a')
+
 }
 
 it('Expect checkIfStrHasA', () => {
@@ -96,7 +96,7 @@ it('Expect checkIfStrHasA', () => {
 
 
 function incrementNum(num) {
-    return num + 1
+
 }
 
 it('Expect incrementNum() to make a number one more', () => {
@@ -105,7 +105,7 @@ it('Expect incrementNum() to make a number one more', () => {
 })
 
 function decrementNum(num) {
-    return num - 1
+
 }
 
 it('Expect decrementNum() number one less', () => {
@@ -115,7 +115,7 @@ it('Expect decrementNum() number one less', () => {
 })
 
 function grabFirst(str) {
-    return str.charAt(0) || false
+
 }
 
 it('Expect grabFirst() to grab the first character in a str or return false', () => {
@@ -124,7 +124,7 @@ it('Expect grabFirst() to grab the first character in a str or return false', ()
 })
 
 function grabStringAtIndex(str, index) {
-    return str.charAt(index)
+
 }
 
 it('Expect grabStringAtIndex to grab a string by an index', () => {
@@ -133,7 +133,7 @@ it('Expect grabStringAtIndex to grab a string by an index', () => {
 })
 
 function grabArrayAtIndex(arr, index) {
-    return arr[index]
+
 }
 
 it('Expect grabArrayAtIndex to grab an array at index', () => {
@@ -142,7 +142,7 @@ it('Expect grabArrayAtIndex to grab an array at index', () => {
 })
 
 function grabLastStringIndex(str) {
-    return str.charAt(str.length - 1)
+
 }
 
 it('Expect grabLastStringIndex to grab last index', () => {
@@ -151,11 +151,7 @@ it('Expect grabLastStringIndex to grab last index', () => {
 })
 
 function reverseString(str) {
-    let newString = ''
-    for (let i = str.length; i >= 0; i--) {
-        newString += str.charAt(i)
-    }
-    return newString
+
 }
 
 
@@ -165,7 +161,7 @@ it('Expect reverseString to work - use a for loop!', () => {
 })
 
 function strToArray(str) {
-    return str.split('')
+
 }
 
 it('Expect strToArray to convert string to array', () => {
@@ -174,7 +170,7 @@ it('Expect strToArray to convert string to array', () => {
 })
 
 function arrToString(arr) {
-    return arr.join('')
+
 }
 
 it('Expect arrToString to convert array to string', () => {
@@ -183,7 +179,7 @@ it('Expect arrToString to convert array to string', () => {
 })
 
 function sumArr(arr) {
-    return arr.reduce((a, b) => a + b)
+
 }
 
 it('Expect sumArr to sum all numbers in array', () => {
@@ -193,7 +189,7 @@ it('Expect sumArr to sum all numbers in array', () => {
 })
 
 function checkIfArrIncludesA(arr) {
-    return arr.includes('a')
+
 }
 
 it('Expect checkIfArrIncludesA to return true if an array includes a', () => {
@@ -202,7 +198,7 @@ it('Expect checkIfArrIncludesA to return true if an array includes a', () => {
 })
 
 function checkIfArrIncludesCharacter(arr, char) {
-    return arr.includes(char)
+
 }
 
 it('Expect checkIfArrIncludesCharacter to return true if an array includes a character', () => {
@@ -212,7 +208,7 @@ it('Expect checkIfArrIncludesCharacter to return true if an array includes a cha
 })
 
 function checkIfTruthy(prop) {
-    return !!prop
+
 }
 
 
@@ -223,7 +219,7 @@ it('Expect checkIfTruthy to return is the value is a truthy value or falsey valu
 })
 
 function checkBothValuesAreTruthy(a, b) {
-    return (a && b) ? true : false
+
 }
 
 it('Expect checkBothValuesAreTruthy to return true if both are not falsey values', () => {
@@ -235,7 +231,7 @@ it('Expect checkBothValuesAreTruthy to return true if both are not falsey values
 })
 
 function flipper(prop) {
-    return !prop
+
 }
 
 it('Expect flipper to take a value and return false for a truthy value and true for a falsey value', () => {
@@ -245,10 +241,7 @@ it('Expect flipper to take a value and return false for a truthy value and true 
 })
 
 function doubleIfMorethanLimit(num, limit) {
-    if (num > limit) {
-        return num * 2
-    }
-    return num
+
 }
 
 it('Expect doubleIfMorethanLimit to double if num is more than limit, otherwise return the number', () => {
@@ -258,7 +251,7 @@ it('Expect doubleIfMorethanLimit to double if num is more than limit, otherwise 
 })
 
 function onlyGreaterThanLimit(arr, limit) {
-    return arr.filter(i => i > limit)
+
 }
 
 it('Expect onlyGreaterThanLimit to only give back an array of numbers greater than a limit', () => {
@@ -268,8 +261,7 @@ it('Expect onlyGreaterThanLimit to only give back an array of numbers greater th
 })
 
 function addToArray(arr, v) {
-    arr.push(v)
-    return arr
+
 }
 
 it('Expect add to arr to give me back an array with the new value added', () => {
@@ -279,7 +271,7 @@ it('Expect add to arr to give me back an array with the new value added', () => 
 })
 
 function makeButtonHTML(arr) {
-    return arr.map(x => `<button>${x}</button>`).join('')
+
 }
 
 it('Expect button html to make a html string of buttons from arr', () => {
@@ -287,16 +279,17 @@ it('Expect button html to make a html string of buttons from arr', () => {
 })
 
 function grabProp(o, prop) {
-    return o[prop] || false
+
 }
 
 it('Expect grab prop to take an object and prop name and return the value of it otherwise return false if it doesnt exist', () => {
     expect(grabProp({foo: 1}, 'foo')).toBe(1)
     expect(grabProp({name: 'ryan'}, 'name')).toBe('ryan')
+    expect(grabProp({name: 'ryan'}, 'foo')).toBe(false)
 })
 
 function hasProp(o, prop) {
-    return o.hasOwnProperty(prop)
+
 }
 
 it('Expect has prop to take an obj and say if it has a property or not', () => {
@@ -307,15 +300,7 @@ it('Expect has prop to take an obj and say if it has a property or not', () => {
 })
 
 function giveMeType(v) {
-    if (typeof v === 'object') {
-        // check if object or array
-        if (Array.isArray(v)) {
-            return 'array'
-        } else {
-            return 'object'
-        }
-    }
-    return typeof v
+
 }
 
 // NOTICE typeof fails for the array if you use it by itself...
@@ -323,4 +308,64 @@ it('Expect give me type to tell me what types are', () => {
     expect(giveMeType(1)).toBe('number')
     expect(giveMeType([])).toBe('array')
     expect(giveMeType({})).toBe('object')
+})
+
+function makeListOfNums(limit) {
+
+}
+
+it('Expect makeListOfNums to make a list of numbers starting from 1 and ending at limit', () => {
+    expect(makeListOfNums(1)).toBe([1])
+    expect(makeListOfNums(2)).toBe([1,2])
+    expect(makeListOfNums(8)).toBe([1,2,3,4,5,6,7,8])
+})
+
+function makeListOfNumsReversed(limit) {
+
+}
+
+it('Expect makeListOfNumsReverse to make a list of numbers starting from limit and ending at 1', () => {
+    expect(makeListOfNumsReversed(1)).toBe([1])
+    expect(makeListOfNumsReversed(2)).toBe([2,1])
+    expect(makeListOfNumsReversed(8)).toBe([8,7,6,5,4,3,2,1])
+})
+
+function makeListOfNumbersWithOrder(count, order) {
+
+}
+
+it('Expect makeListOfNumbersWithOrder to make a the lists below', () => {
+    expect(makeListOfNumbersWithOrder(1, 'ascending')).toBe([1])
+    expect(makeListOfNumbersWithOrder(2, 'descending')).toBe([2,1])
+    expect(makeListOfNumbersWithOrder(8, 'descending')).toBe([8,7,6,5,4,3,2,1])
+    expect(makeListOfNumbersWithOrder(8, 'ascending')).toBe([1,2,3,4,5,6,7,8])
+})
+
+function numsToObjList(arr) {
+    return arr.map(x => ({value: x}))
+}
+
+it('Expect numsToObj to take a list of numbers and make it a list of objects like below', () => {
+    expect(numsToObjList([1,2,3])).toBe([{value: 1}, {value: 2}, {value: 3}])
+})
+
+function objListToNums(arr) {
+    return arr.map(x => {
+        return x.value
+    })
+}
+
+it('Expect objListToNums to take a list of numbers and make it a list of objects like below', () => {
+    expect(objListToNums([{value: 1}, {value: 2}, {value: 3}])).toBe([1,2,3])
+})
+
+function callThatFunction(cb, a, b) {
+    return cb(a, b)
+}
+
+it('Expect call that function to call the function passed', () => {
+    function add(a, b) {
+        return a + b
+    }
+    expect(callThatFunction(add, 1, 2)).toBe(3)
 })
