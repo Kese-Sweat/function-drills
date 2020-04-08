@@ -309,3 +309,34 @@ it('Expect give me type to tell me what types are', () => {
     expect(giveMeType([])).toBe('array')
     expect(giveMeType({})).toBe('object')
 })
+
+function makeListOfNums(limit) {
+
+}
+
+it('Expect makeListOfNums to make a list of numbers starting from 1 and ending at limit', () => {
+    expect(makeListOfNums(1)).toBe([1])
+    expect(makeListOfNums(2)).toBe([1,2])
+    expect(makeListOfNums(8)).toBe([1,2,3,4,5,6,7,8])
+})
+
+function makeListOfNumsReversed(limit) {
+
+}
+
+it('Expect makeListOfNumsReverse to make a list of numbers starting from limit and ending at 1', () => {
+    expect(makeListOfNumsReversed(1)).toBe([1])
+    expect(makeListOfNumsReversed(2)).toBe([2,1])
+    expect(makeListOfNumsReversed(8)).toBe([8,7,6,5,4,3,2,1])
+})
+
+function makeListOfNumbersWithOrder(count, order) {
+
+}
+
+it('Expect makeListOfNumbersWithOrder to make a the lists below', () => {
+    expect(makeListOfNumbersWithOrder(1, 'ascending')).toBe([1])
+    expect(makeListOfNumbersWithOrder(2, 'descending')).toBe([2,1])
+    expect(makeListOfNumbersWithOrder(8, 'descending')).toBe([8,7,6,5,4,3,2,1])
+    expect(makeListOfNumbersWithOrder(8, 'ascending')).toBe([1,2,3,4,5,6,7,8])
+})
