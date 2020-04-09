@@ -26,6 +26,7 @@ it('Expect add to add two numbers', () => {
 })
 
 function lessThanOne(num) {
+  return (num === 0)
 
 }
 
@@ -36,7 +37,7 @@ it('Expect lessThanOne to return true', () => {
 })
 
 function lessThanLimit(num, limit) {
-
+ return (num < limit)
 }
 
 it('Expect lessThanLimit to return true if less than limit', () => {
@@ -46,7 +47,7 @@ it('Expect lessThanLimit to return true if less than limit', () => {
 })
 
 function equalTo(prop, value) {
-
+ return (prop === value)
 }
 
 it('Expect equalTo', () => {
@@ -56,7 +57,7 @@ it('Expect equalTo', () => {
 })
 
 function getNumCharacters(str) {
-
+ return str.length
 }
 
 it('Expect getNumCharacters() to return how many characters a string is', () => {
@@ -67,6 +68,7 @@ it('Expect getNumCharacters() to return how many characters a string is', () => 
 
 function isStringEmpty(str) {
 
+    return( str === '')
 }
 
 it('Expect isStringEmpty() to return true if empty else false', () => {
@@ -76,7 +78,7 @@ it('Expect isStringEmpty() to return true if empty else false', () => {
 })
 
 function greet(str) {
-
+return  'Hello ' +  str
 }
 
 it('Expect greet() to return Hello {name} where name is a string', () => {
@@ -85,7 +87,7 @@ it('Expect greet() to return Hello {name} where name is a string', () => {
 })
 
 function checkIfStrHasA(str) {
-
+ return str.includes('a')
 }
 
 it('Expect checkIfStrHasA', () => {
