@@ -26,7 +26,7 @@ it('Expect add to add two numbers', () => {
 })
 
 function lessThanOne(num) {
-  return (num === 0)
+  return (num < 1)
 
 }
 
@@ -68,7 +68,7 @@ it('Expect getNumCharacters() to return how many characters a string is', () => 
 
 function isStringEmpty(str) {
 
-    return( str === '')
+    return(str === '')
 }
 
 it('Expect isStringEmpty() to return true if empty else false', () => {
@@ -98,7 +98,7 @@ it('Expect checkIfStrHasA', () => {
 
 
 function incrementNum(num) {
-
+return num + 1
 }
 
 it('Expect incrementNum() to make a number one more', () => {
@@ -107,6 +107,7 @@ it('Expect incrementNum() to make a number one more', () => {
 })
 
 function decrementNum(num) {
+    return num - 1
 
 }
 
@@ -117,6 +118,7 @@ it('Expect decrementNum() number one less', () => {
 })
 
 function grabFirst(str) {
+ return str.charAt(0)
 
 }
 
@@ -126,7 +128,7 @@ it('Expect grabFirst() to grab the first character in a str or return false', ()
 })
 
 function grabStringAtIndex(str, index) {
-
+    return str.charAt(index)
 }
 
 it('Expect grabStringAtIndex to grab a string by an index', () => {
@@ -135,6 +137,7 @@ it('Expect grabStringAtIndex to grab a string by an index', () => {
 })
 
 function grabArrayAtIndex(arr, index) {
+    return arr[index]
 
 }
 
@@ -144,6 +147,7 @@ it('Expect grabArrayAtIndex to grab an array at index', () => {
 })
 
 function grabLastStringIndex(str) {
+    return str.charAt(str.length -1)// index starts at 0 so we must use -1 to get last index
 
 }
 
@@ -153,7 +157,16 @@ it('Expect grabLastStringIndex to grab last index', () => {
 })
 
 function reverseString(str) {
+    let myString = ''// Will store characters when for loop runs          //ex 0 1 2 3
+    for (let i = str.length -1; i >= 0; i--){                            //ex: K E S E                                                                   //sf
+        // Will run for loop in reverse..                               //ex:E = index is 2 because of str.lentgth -1
+        myString += str.charAt(i) }// charAt only available on strings
+        
 
+        return myString
+        
+        
+    
 }
 
 
@@ -163,6 +176,7 @@ it('Expect reverseString to work - use a for loop!', () => {
 })
 
 function strToArray(str) {
+   return str.split('')
 
 }
 
@@ -172,16 +186,17 @@ it('Expect strToArray to convert string to array', () => {
 })
 
 function arrToString(arr) {
-
+    return arr.join('')
 }
-
 it('Expect arrToString to convert array to string', () => {
     expect(arrToString(['a', 'b'])).toBe('ab')
     expect(arrToString(['a'])).toBe('a')
 })
 
 function sumArr(arr) {
-
+return arr.reduce((a,b)=>{
+    return a + b
+})
 }
 
 it('Expect sumArr to sum all numbers in array', () => {
@@ -302,6 +317,8 @@ it('Expect has prop to take an obj and say if it has a property or not', () => {
 })
 
 function giveMeType(v) {
+    arr.push(v)
+    return arr
 
 }
 
